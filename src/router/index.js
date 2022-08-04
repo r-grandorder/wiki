@@ -6,8 +6,9 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      beforeEnter(to, from, next) {
+        window.location.href = "https://r-grandorder.github.io/tri-hermes/";
+      }
     },
     {
       path: '/github',
@@ -20,7 +21,12 @@ const router = createRouter({
       beforeEnter(to, from, next) {
         window.location.href = "https://r-grandorder.github.io/tri-hermes/";
       }
-    }
+    },
+    { path: '/:pathMatch(.*)',
+      beforeEnter(to, from, next) {
+        window.location.href = "https://r-grandorder.github.io/tri-hermes" + to.path;
+      }
+    },
   ]
 })
 
