@@ -1,3 +1,8 @@
+# Project has moved 
+Please go to https://github.com/r-grandorder/tri-hermes
+
+---
+
 # r-grandorder-wiki-redirect
 
 This template should help get you started developing with Vue 3 in Vite.
