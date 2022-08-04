@@ -25,7 +25,7 @@ const router = createRouter({
     { path: '/:pathMatch(.*)',
       beforeEnter(to, from, next) {
         window.location.href = "https://r-grandorder.github.io/tri-hermes" + to.path;
-      }
+      }}}
     },
   ]
 })
